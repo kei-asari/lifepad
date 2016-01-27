@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'clips/create'
+
+  get 'clips/destroy'
+
   get 'categories/index'
 
   get 'categories/show'
