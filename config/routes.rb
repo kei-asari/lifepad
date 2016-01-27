@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'articles/show'
+
+  get 'articles/new'
+
+  get 'articles/create'
+
+  get 'articles/edit'
+
+  get 'articles/update'
+
+  get 'articles/destroy'
+
   get 'home/index'
 
   devise_for :users
