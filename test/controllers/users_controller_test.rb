@@ -6,8 +6,8 @@ class UsersControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should get posts" do
-    get :posts
+  test "should get posts_index" do
+    get :posts_index
     assert_response :success
   end
 

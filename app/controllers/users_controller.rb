@@ -2,6 +2,6 @@ class UsersController < ApplicationController
   def show
   end
 
-  def posts
+  def posts_index
   end
 end

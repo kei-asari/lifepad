@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'users/show'
+
+  get 'users/posts_index'
+
   root 'home#index'
 
   resources :home, only: :index
