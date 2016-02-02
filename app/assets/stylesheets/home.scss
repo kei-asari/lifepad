@@ -1,6 +1,7 @@
 body{
   height: 100%;
   margin: 0;
+  background-color: #f6fce9;
 }
 
 
@@ -17,9 +18,11 @@ header {
   float: right;
   margin-right: 10px;
 }
-.contents {
-  background-color: gray;
-  hight: 500px;
+
+.content{
+  width: 90%;
+  border: 1px solid #000;
+  margin: 0 auto;
 }
 
 footer {
