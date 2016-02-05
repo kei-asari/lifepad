@@ -1,16 +1,14 @@
 <div class="article_post">
   <div class="clearfix">
-    <div class="article_left">
-      <!-- <%= @article.thumbnail %> -->
-      <% @article.each do |thumbnail| %>
-      <%= article.thumbnail %>
-    <% end %>
-    </div>
-    <div class="article_right">
-      <!-- <p><%= @article.title %></p> -->
-      <% @tarticle.each do |title| %>
-      <%= article.title %>
-    <% end %>
-    </div>
+    <% @article.each do |article| %>
+      <div class="article_left">
+        <!-- <%= @article.thumbnail %> -->
+        <%= article.thumbnail %>
+      </div>
+      <div class="article_right">
+        <!-- <p><%= @article.title %></p> -->
+        <%= article.title %>
+      <% end %>
+      </div>
   </div>
 </div>
