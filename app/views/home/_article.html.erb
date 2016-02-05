@@ -2,13 +2,11 @@
   <div class="clearfix">
     <% @article.each do |article| %>
       <div class="article_left">
-        <!-- <%= @article.thumbnail %> -->
         <%= article.thumbnail %>
       </div>
       <div class="article_right">
-        <!-- <p><%= @article.title %></p> -->
         <%= article.title %>
-      <% end %>
       </div>
+    <% end %>
   </div>
 </div>
