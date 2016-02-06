@@ -26,16 +26,23 @@
 
 .article_right{
   width: 64%;
-  height: 160px;
-  background-color: green;
-  opacity: 0.5;
+  height: 100px;
   float: right;
   margin-right: 2%;
   margin-left: 1%;
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
-  font-size: 100px;
+  font-size: 70px;
   border-radius: 20px;
   text-decoration:underline;
+}
+.article_right2{
+  float: right;
+  height: 50px;
+  width: 64%;
+  margin-right: 2%;
+  margin-left: 1%;
+  font-size: 30px;
+  border-radius: 20px;
 }

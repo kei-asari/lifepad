@@ -1,8 +1,10 @@
 <div class="article_post clearfix">
     <div class="article_left" style="background: url('http://blog-imgs-55.fc2.com/v/a/c/vacuumfella/sky93.jpg');">
-      <%= link_to "http://www.google.co.jp/" %>
     </div>
     <div class="article_right">
-      <%= article.title %>
+      <%= link_to article.title, '/articles' %>
+    </div>
+    <div class="article_right2">
+      <%= link_to article.cotegory_id, '/cotegories' %>
     </div>
 </div>
