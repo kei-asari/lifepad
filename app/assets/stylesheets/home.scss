@@ -5,9 +5,10 @@
 
 .article_post{
   width: 90%;
-  margin: 5px auto;
+  margin: 10px auto;
   background-color: white;
   height: 200px;
+  border-radius: 20px;
 }
 
 .article_left{
@@ -20,6 +21,7 @@
   margin-right: 2%;
   margin-top: 20px;
   margin-bottom: 20px;
+  border-radius: 20px;
 }
 
 .article_right{
@@ -32,4 +34,8 @@
   margin-left: 1%;
   margin-top: 20px;
   margin-bottom: 20px;
+  text-align: center;
+  font-size: 100px;
+  border-radius: 20px;
+  text-decoration:underline;
 }
