@@ -1,5 +1,5 @@
 <div class="form_input">
-    <form action="/test" method="post">
+    <%= form_tag('/test', method: :post) do %>
       <div class="title_input">
         <input placeholder="タイトル" type="text" id="title">
       </div>
@@ -13,7 +13,8 @@
         <textarea placeholder="本文" id="content"></textarea>
       </div>
       <div>
-        <input type="submit">
+        <input type="submit" value="Sent">
+        <input type="submit"  value="Delete" />
       </div>
-    </form>
+    <% end %>
   </div>
