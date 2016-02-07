@@ -16,3 +16,25 @@
 - clips
   - user_id
   - article_id
+
+## controller
+
+- home
+  - index
+- articles
+  - show
+  - new
+  - create
+  - edit
+  - update
+  - destroy
+- categories
+  - index
+  - show
+- clips
+  - create
+  - destroy
+- users
+  - show
+  - posts
+
