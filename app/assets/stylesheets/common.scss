@@ -3,7 +3,13 @@ body{
   margin: 0;
   background-color: #f6fce9;
 }
-
+a{
+  color: black;
+  text-decoration: none;
+}
+a:active{
+  color: black;
+}
 
 header {
   top: 0;
@@ -22,7 +28,6 @@ header {
   float: right;
   margin-right: 10px;
 }
-
 
 footer {
   background-color: #99cc00;
