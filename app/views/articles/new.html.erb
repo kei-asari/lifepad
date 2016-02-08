@@ -1,5 +1,5 @@
 <div class="form_input">
-  <%= form_for articles do |article| %>
+  <%= form_for @article do |article| %>
     <div class="title_input">
       <%= article.text_field :title, placeholder: "タイトル" %>
     </div>
@@ -7,7 +7,7 @@
       <%= article.file_field :thumbnail, placeholder: "サムネイル" %>
     </div>
     <div class="input_cotegory">
-      <%= article.date_select :cotegory, placeholder: "カテゴリー" %>
+      <%= article.select :cotegory_id, placeholder: "カテゴリー" %>
     </div>
     <div class="input_content">
       <%= article.text_area :content, placeholder: "本文" %>
