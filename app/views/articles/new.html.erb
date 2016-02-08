@@ -1,20 +1,20 @@
 <div class="form_input">
-    <%= form_tag('/test', method: :post) do %>
-      <div class="title_input">
-        <input placeholder="タイトル" type="text" id="title">
-      </div>
-      <div class="input_image">
-        <input placeholder="Image Url" type="text" name="image">
-      </div>
-      <div class="input_content">
-        <input placeholder="カテゴリー" type="text" id="cotegory">
-      </div>
-      <div class="input_content">
-        <textarea placeholder="本文" id="content"></textarea>
-      </div>
-      <div class="clearfix">
-        <input class="D_btn" type="submit"  value="Delete" id="submit_btn">
-        <input class="S_btn" type="submit" value="Sent" id="submit_btn">
-      </div>
-    <% end %>
-  </div>
+  <%= form_for articles do |article| %>
+    <div class="title_input">
+      <%= article.text_field :title, placeholder: "タイトル" %>
+    </div>
+    <div class="input_image">
+      <%= article.file_field :thumbnail, placeholder: "サムネイル" %>
+    </div>
+    <div class="input_cotegory">
+      <%= article.date_select :cotegory, placeholder: "カテゴリー" %>
+    </div>
+    <div class="input_content">
+      <%= article.text_area :content, placeholder: "本文" %>
+    </div>
+    <div class="clearfix">
+      <input class="delete_btn" type="submit"  value="Delete" id="submit_btn">
+      <input class="submit_btn" type="submit" value="Sent" id="submit_btn">
+    </div>
+  <% end %>
+</div>
