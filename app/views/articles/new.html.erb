@@ -1,20 +1,19 @@
 <div class="form_input">
   <%= form_for @article do |article| %>
     <div class="title_input">
-      <%= article.text_field :title, placeholder: "タイトル" %>
+      <%= article.text_field :title, placeholder: "タイトル", class: "title_btn" %>
     </div>
     <div class="input_image">
-      <%= article.file_field :thumbnail, placeholder: "サムネイル" %>
+      <%= article.file_field :thumbnail, placeholder: "サムネイル", class: "thumbnail_btn" %>
     </div>
     <div class="input_cotegory">
-      <%= article.select :cotegory_id, placeholder: "カテゴリー" %>
+      <%= article.select :cotegory_id, {cleaning: "掃除"}, {}, { class: "cotegory_btn"} %>
     </div>
     <div class="input_content">
       <%= article.text_area :content, placeholder: "本文" %>
     </div>
     <div class="clearfix">
-      <input class="delete_btn" type="submit"  value="Delete" id="submit_btn">
-      <input class="submit_btn" type="submit" value="Sent" id="submit_btn">
+      <%= article.submit placeholder: "Sent", class: "submit_btn" %>
     </div>
   <% end %>
 </div>

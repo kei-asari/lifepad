@@ -3,11 +3,10 @@
   width: 90%;
 }
 
-input{
-  width: 100%;
+.title_btn{
   height: 120px;
-  margin-top: 30px;
-  font-size: 50px;
+  width: 100%;
+  font-size: 70px;
 }
 textarea{
   width: 100%;
@@ -15,19 +14,34 @@ textarea{
   font-size: 50px;
   margin-top: 30px;
 }
-.S_btn{
+.submit_btn{
   height: 100px;
-  width: 48%;
-  float: right;
+  width: 90%;
+  margin-right: 5%;
+  margin-left: 5%;
   background-color: #99cc00;
   font-size: 50px;
   border-radius: 20px;
 }
-.D_btn{
-  height: 100px;
-  width: 48%;
-  float: left;
+thumbnail_btn{
+  width: 100%;
+  height: 120px;
   background-color: #99cc00;
-  font-size: 50px;
-  border-radius: 20px;
+}
+.thumbnail_btn{
+  width: 100%;
+  height: 120px;
+  background-color: blue;
+  border-style: none;
+}
+.cotegory_btn{
+  width: 100%;
+  height: 120px;
+  background-color: blue;
+}
+.input_image{
+  margin-top: 50px;
+}
+.input_cotegory{
+  margin-top: 50px;
 }
