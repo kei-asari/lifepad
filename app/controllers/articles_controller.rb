@@ -4,6 +4,9 @@ class ArticlesController < ApplicationController
 
   def new
     @article = Article.new
+    @categories = Category.all.map do |category|
+      [category.name, category.id]
+    end
   end
 
   def create
