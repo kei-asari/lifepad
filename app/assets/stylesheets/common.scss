@@ -52,6 +52,8 @@ li{
 li a{
   font-size: 12px;
   margin: 0 auto;
+  display: block;
+  height: 100%;
 }
 .clearfix:after {
   content: "";
