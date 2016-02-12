@@ -1,3 +1,31 @@
-// Place all the styles related to the categories controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.cotegories{
+  width: 90%;
+  margin: 30px auto;
+  background-color: white;
+  height: 200px;
+  border-radius: 20px;
+}
+.cotegory_left{
+  width: 28%;
+  height: 80%;
+  opacity: 0.5;
+  float: left;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+.cotegory_right{
+  width: 64%;
+  height: 100px;
+  float: right;
+  margin-right: 2%;
+  margin-left: 1%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 80px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: inherit;
+}
