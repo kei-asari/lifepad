@@ -4,13 +4,15 @@
       <div class="test_image"></div>
     </div>
     <div class="article_title">
-      <div class="test_title"></div>
+        <p><%= @article.title %></p>
     </div>
     <div class="article_clip">
       <div class="test_btn"></div>
     </div>
   </div>
   <div class="content_bottom">
-    <div class="test_content"></div>
+    <div class="test_content">
+      <%= raw(@article.content) %>
+    </div>
   </div>
 </div>
