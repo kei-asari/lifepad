@@ -1,3 +1,30 @@
-// Place all the styles related to the users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.users_top{
+  height: 400px;
+  width: 90%;
+  margin: 0 auto;
+  background-color: white;
+}
+.users_icon{
+  width: 40%;
+  height: 100%;
+  background-color: blue;
+  opacity: 0.5;
+  float: left;
+}
+.users_btn{
+  height: 40%;
+  width: 60%;
+  background-color: blue;
+  opacity: 0.5;
+  margin-top: 15%;
+  margin-bottom: 15%;
+  float: right;
+}
+
+
+.users_bottom{
+  background-color: white;
+  width: 90%;
+  height:800px;
+  margin: 20px auto;
+}
