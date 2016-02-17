@@ -27,6 +27,7 @@
 
 .users_top{
   height: 400px;
+  position: relative;
   width: 90%;
   margin: 0 auto;
   background-color: white;
@@ -37,19 +38,30 @@
   background-color: blue;
   opacity: 0.5;
   float: left;
+  text-aligh: center;
+}
+.users_icon div{
+  margin: auto auto;
 }
 .users_btn{
-  height: 40%;
+  height: 30%;
   width: 60%;
-  background-color: blue;
   opacity: 0.5;
-  margin-top: 15%;
-  margin-bottom: 15%;
+  margin-top: 4%;
+  margin-bottom: 1%;
   float: right;
+}
+.btn{
+  height:100%;
+  width: 400px;
+  margin:0 auto;
+  background-color: #99cc00;
+  font-size: 60px;
+  border-radius: 10px;
+  text-align: center;
 }
 .users_bottom{
   background-color: white;
   width: 90%;
-  height:800px;
   margin: 20px auto;
 }

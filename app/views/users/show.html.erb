@@ -1,13 +1,20 @@
 <div class="contents">
   <div class="users_top clearfix">
     <div class="users_icon">
-      
+        <%= @user.username %>
     </div>
-    <div class="users_btn">
-      
+    <div class="users_btn posts_show">
+      <div class="btn">
+        <%= link_to "Posts", users_posts_index_path, :method => :get %>
+      </div>
+    </div>
+    <div class="users_btn log_out">
+      <div class="btn">
+        <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+      </div>
     </div>
   </div>
   <div class="users_bottom">
-    
+    <%= render partial: "article", collection: @articles %>
   </div>
 </div>
