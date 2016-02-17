@@ -13,6 +13,8 @@ class ArticlesController < ApplicationController
   end
 
   def create
+    Article.create(create_params)
+    redirect_to controller: :products, action: :index
   end
 
   def edit
@@ -22,5 +24,10 @@ class ArticlesController < ApplicationController
   end
 
   def destroy
+  end
+
+  private
+  def create_params
+    params.require(:article).permit(:current_user_id, :title, :contents, :thumbnail).merge(category_id: params[:category_id])
   end
 end
