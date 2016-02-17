@@ -34,14 +34,12 @@
 }
 .users_icon{
   width: 40%;
-  height: 100%;
-  background-color: blue;
+  height: 60%;
+  padding-top: 10%;
   opacity: 0.5;
   float: left;
-  text-aligh: center;
-}
-.users_icon div{
-  margin: auto auto;
+  text-align: center;
+  font-size: 60px;
 }
 .users_btn{
   height: 30%;
@@ -56,7 +54,7 @@
   width: 400px;
   margin:0 auto;
   background-color: #99cc00;
-  font-size: 60px;
+  font-size: 70px;
   border-radius: 10px;
   text-align: center;
 }
