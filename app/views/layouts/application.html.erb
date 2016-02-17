@@ -25,7 +25,7 @@
       <li><a href="/"><i class="fa fa-file-o fa-5x"></i></a></li>
       <li><a href="/categories"><i class="fa fa-folder-o fa-5x"></i></a></li>
       <li><a href=""><i class="fa fa-search fa-5x"></i></a></li>
-      <li><a href="/users"><i class="fa fa-frown-o fa-5x"></i></a></li>
+      <li><%= link_to "", user_path(@user), method: :get %><i class="fa fa-frown-o fa-5x"></i></li>
     </ul>
   </footer>
 </body>
