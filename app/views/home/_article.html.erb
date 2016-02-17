@@ -5,6 +5,6 @@
       <%= link_to article.title, article_path(article), method: :get %>
     </div>
     <div class="article_right2">
-      <%= link_to article.category.name, '/categories' %>
+      <%= link_to article.category.name, category_path(article), method: :get %>
     </div>
 </div>
