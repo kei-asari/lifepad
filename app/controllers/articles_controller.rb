@@ -14,7 +14,7 @@ class ArticlesController < ApplicationController
 
   def create
     Article.create(create_params)
-    redirect_to controller: :products, action: :index
+    redirect_to controller: :home, action: :index
   end
 
   def edit
