@@ -13,7 +13,8 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    Article.create(create_params)
+    @article = Article.create(create_params)
+    @article.save
     redirect_to controller: :home, action: :index
   end
 
@@ -24,6 +25,9 @@ class ArticlesController < ApplicationController
   end
 
   def destroy
+  end
+
+  def search
   end
 
   private
