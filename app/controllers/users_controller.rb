@@ -2,11 +2,10 @@ class UsersController < ApplicationController
   before_action :authenticate_user! only: :show
 
   def show
-    @articles = current_user.articles
+    @clips = current_user.cliped_articles.uniq
   end
 
   def posts_index
-    @user = User.find(params[:id])
-    @posts = @user.articles
+    @articles = current_user.articles
   end
 end
