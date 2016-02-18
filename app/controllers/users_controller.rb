@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
-  
+
   def show
-    @clips = current_user.cliped_articles.uniq
+    @clips = current_user.cliped_articles
   end
 
   def posts_index
