@@ -1,8 +1,8 @@
 class UsersController < ApplicationController
-  before_action :authenticate_user! only: :show
 
   def show
-    @clips = current_user.cliped_articles.uniq
+    @user = User.find(params[:id])
+    @clips = @user.cliped_articles.uniq
   end
 
   def posts_index

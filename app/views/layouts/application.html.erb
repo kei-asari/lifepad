@@ -27,7 +27,7 @@
       <li><a href=""><i class="fa fa-search fa-5x"></i></a></li>
       <li>
         <% if user_signed_in? %>
-          <%= link_to user_path(@user), method: :get do %>
+          <%= link_to user_path(current_user), method: :get do %>
             <i class="fa fa-frown-o fa-5x"></i>
           <% end %>
         <% else %>
