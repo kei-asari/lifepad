@@ -14,7 +14,6 @@ class ArticlesController < ApplicationController
 
   def create
     @article = Article.create(create_params)
-    @article.save
     redirect_to controller: :home, action: :index
   end
 
@@ -32,6 +31,8 @@ class ArticlesController < ApplicationController
 
   private
   def create_params
-    params.require(:article).permit(:current_user_id, :title, :contents, :thumbnail).merge(category_id: params[:category_id])
+    params.require(:article).permit(:title, :content, :thumbnail)
+    params.require(:current_user).permit(:current_user_id)
+    params.require(:category).permit(:category_id)
   end
 end
