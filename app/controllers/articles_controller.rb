@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  before_action :authenticate_user!, only: :new
+  before_action :authenticate_user!, only: [:new, :create, :update, :destroy]
 
   def show
     @article = Article.find(params[:id])
@@ -31,8 +31,6 @@ class ArticlesController < ApplicationController
 
   private
   def create_params
-    params.require(:article).permit(:title, :content, :thumbnail)
-    params.require(:current_user).permit(:current_user_id)
-    params.require(:category).permit(:category_id)
+    params.require(:article).permit(:current_user_id, :title, :content, :thumbnail).merge(category_id: params[:article][:category_id], user_id: current_user.id)
   end
 end
