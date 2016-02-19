@@ -58,7 +58,6 @@ textarea{
   background-color: white;
 }
 .article_thumbnail{
-  background-color: blue;
   opacity: 0.5;
   width: 40%;
   height:100%;
@@ -71,8 +70,6 @@ textarea{
   margin: 10% 5%;
 }
 .article_title{
-  background-color: red;
-  opacity: 0.5;
   height:50%;
   width: 60%;
   float: right;
@@ -81,7 +78,6 @@ textarea{
 }
 
 .article_clip{
-  background-color: green;
   opacity: 0.5;
   height:50%;
   width: 60%;
@@ -100,8 +96,6 @@ textarea{
   margin: 10px auto;
 }
 .test_content{
-  background-color: blue;
-  opacity: 0.5;
   width: 95%;
   height: 90%;
   margin: 5% auto;
@@ -134,4 +128,14 @@ textarea{
   width: 80px;
   background-color: #99cc00;
   font-size: 20px;
+}
+.clip_btn{
+  height:60%;
+  width: 400px;
+  margin:0 auto;
+  margin-top: 5%;
+  background-color: #99cc00;
+  font-size: 70px;
+  border-radius: 10px;
+  text-align: center;
 }

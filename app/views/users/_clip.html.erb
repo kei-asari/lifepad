@@ -1,5 +1,6 @@
 <div class="article_post clearfix">
-    <div class="article_left" style="background: url('http://blog-imgs-55.fc2.com/v/a/c/vacuumfella/sky93.jpg');">
+    <div class="article_left">
+      <%= image_tag(clip.thumbnail) %>
     </div>
     <div class="article_right">
       <%= link_to clip.title, article_path(clip), method: :get %>
