@@ -3,6 +3,7 @@ class ArticlesController < ApplicationController
 
   def show
     @article = Article.find(params[:id])
+    @clip = Clip.new
   end
 
   def new

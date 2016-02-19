@@ -1,6 +1,7 @@
 class ClipsController < ApplicationController
   def create
-    @clip = Clip.create(create_params)
+    binding.pry
+    @clip.create(create_params)
     redirect_to controller: :article, action: :show
   end
 
