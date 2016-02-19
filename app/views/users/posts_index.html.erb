@@ -1,11 +1,11 @@
 <div class="contents">
   <div class="users_top clearfix">
     <div class="users_icon">
-      <%= current_user.username %>
+      <%= current_user.username %>さん
     </div>
     <div class="users_btn posts_show">
       <div class="btn">
-        <%= link_to "Clips", user_path, :method => :get %>
+        <%= link_to "Clips", user_path(current_user), :method => :get %>
       </div>
     </div>
     <div class="users_btn log_out">
