@@ -10,7 +10,7 @@
       <pre>
         <div id="overlay">
           <%= link_to '編集', "/articles/#{@article.id}/edit", method: :get %>
-          <%= link_to '削除', "/article/#{@article.id}", method: :delete %>
+          <%= link_to '削除', "/articles/#{@article.id}", method: :delete %>
           <p id="close">close</p>
         </div>
         <div id="edit_btn"><i class="fa fa-cog fa-3x"></i></div>
