@@ -1,7 +1,8 @@
 class ClipsController < ApplicationController
   def create
-    @clip.create(create_params)
-    redirect_to controller: :article, action: :show
+    @clip = Clip.create(create_params)
+    @article = Article.find(params[:article_id])
+    redirect_to article_path(@article)
   end
 
   def destroy
@@ -9,6 +10,6 @@ class ClipsController < ApplicationController
 
   private
   def create_params
-    params.merge(article_id: params[:article_id], user_id: current_user.id)
+    params.permit(:article_id).merge(user_id: current_user.id)
   end
 end

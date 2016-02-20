@@ -5,15 +5,16 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
   <header id="header" >
       <div class="clearfix">
         <div class="top-left">
-          <a class="list-group-item" href="/"><i class="fa fa-home fa-5x"></i></a>
+          <a class="list-group-item" href="/"><i class="fa fa-home fa-3x"></i></a>
         </div>
         <div class="top-right">
-          <a href="/articles/new" title="post-btn"><i class="fa fa-pencil fa-5x"></i></a>
+          <a href="/articles/new" title="post-btn"><i class="fa fa-pencil fa-3x"></i></a>
         </div>
       </div>
   </header>
@@ -22,17 +23,17 @@
 
   <footer id="footer">
     <ul class="clearfix">
-      <li><a href="/"><i class="fa fa-file-o fa-5x"></i></a></li>
-      <li><a href="/categories"><i class="fa fa-folder-o fa-5x"></i></a></li>
-      <li><a href="/articles/search"><i class="fa fa-search fa-5x"></i></a></li>
+      <li><a href="/"><i class="fa fa-file-o fa-3x"></i></a></li>
+      <li><a href="/categories"><i class="fa fa-folder-o fa-3x"></i></a></li>
+      <li><a href="/articles/search"><i class="fa fa-search fa-3x"></i></a></li>
       <li>
         <% if user_signed_in? %>
           <%= link_to user_path(current_user), method: :get do %>
-            <i class="fa fa-frown-o fa-5x"></i>
+            <i class="fa fa-frown-o fa-3x"></i>
           <% end %>
         <% else %>
           <%= link_to '/users/sign_in', method: :get do %>
-            <i class="fa fa-frown-o fa-5x"></i>
+            <i class="fa fa-frown-o fa-3x"></i>
           <% end %>
         <%end%>
       </li>

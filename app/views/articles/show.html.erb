@@ -8,10 +8,7 @@
     </div>
     <div class="article_clip">
       <div class="clip_btn">
-        <%= form_for @clip do |clip| %>
-            <%= clip.hidden_field :article_id %>
-            <%= clip.submit "clip"%>
-        <% end %>
+        <%= link_to "clip", clips_path(article_id: @article.id ), method: :post %>
       </div>
     </div>
   </div>
