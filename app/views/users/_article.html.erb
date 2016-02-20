@@ -8,4 +8,15 @@
     <div class="article_right2">
       <%= link_to article.category.name, category_path(article), method: :get %>
     </div>
+    <div class="edit_btn">
+      <span><i class="fa fa-cog fa-3x"></i></span>
+      <ul class="user_list">
+        <li>
+          <%= link_to '編集', "/articles/#{article.id}/edit", method: :get %>
+        </li>
+        <li>
+          <%= link_to '削除', "/article/#{article.id}", method: :delete %>
+       </li>
+      </ul>
+    </div>
 </div>
