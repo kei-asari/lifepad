@@ -71,16 +71,23 @@ textarea{
 }
 .article_title{
   height:50%;
-  width: 60%;
-  float: right;
+  width: 30%;
+  float: left;
   font-size: 30px;
-  text-align: center;
+  text-align: left;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+#edit_btn{
+  cursor: pointer;
+  float: right;
+  width: 20%;
+  height: 50px;
+  margin-top: 10px;
+}
 .article_clip{
-  height:50%;
+  height:30%;
   width: 60%;
   float: right;
 }
@@ -96,7 +103,7 @@ textarea{
   margin:0 auto;
   margin-top: 5%;
   background-color: #99cc00;
-  font-size: 40px;
+  font-size: 20px;
   border-radius: 10px;
   text-align: center;
 }
@@ -111,7 +118,7 @@ textarea{
   position: absolute;
   width: 95%;
   height: 90%;
-  margin: 5% auto;
+  margin: 0 auto;
   font-size:30px;
 }
 .contents_success{
@@ -139,6 +146,25 @@ textarea{
   height: 60px;
   width: 80px;
   background-color: #99cc00;
+  font-size: 20px;
+}
+#overlay{
+  display: none;
+  margin-left:2px;
+  width: 100%;
+  height:100%;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background: rgba(0,0,0,0.85);
+}
+#overlay a{
+  color: white;
+  font-size: 20px;
+}
+#overlay p{
+  color: white;
   font-size: 20px;
 }
 
