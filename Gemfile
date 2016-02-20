@@ -46,5 +46,6 @@ group :development do
 
 end
 gem 'devise'
+gem 'paperclip'
 gem "acts-as-taggable-on"
 gem "font-awesome-rails"
