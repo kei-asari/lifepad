@@ -75,6 +75,9 @@ textarea{
   float: right;
   font-size: 30px;
   text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .article_clip{
   height:50%;
@@ -98,12 +101,14 @@ textarea{
   text-align: center;
 }
 .content_bottom{
+  position: relative;
   background-color: white;
-  width: 95%;
-  height:400px;
+  min-width: 95%;
+  min-height:400px;
   margin: 10px auto;
 }
-.test_content{
+.text_content{
+  position: absolute;
   width: 95%;
   height: 90%;
   margin: 5% auto;
