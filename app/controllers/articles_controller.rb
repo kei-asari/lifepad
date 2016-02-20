@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create, :update, :destroy]
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
 
   def show
     @article = Article.find(params[:id])
@@ -19,6 +19,7 @@ class ArticlesController < ApplicationController
   end
 
   def edit
+    @article = Article.find(params[:id])
   end
 
   def update

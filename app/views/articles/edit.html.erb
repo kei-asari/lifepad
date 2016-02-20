@@ -1,2 +1,22 @@
-<h1>Articles#edit</h1>
-<p>Find me in app/views/articles/edit.html.erb</p>
+<div class="form_input clearfix">
+  <%= form_for @article do |article| %>
+    <div class="title_input">
+      <%= article.text_field :title, placeholder: "#{@article.title}", class: "title_btn" %>
+    </div>
+    <div class="input_image">
+      <label for="article_thumbnail" class="file">
+      <i class="fa fa-picture-o fa-4x"></i>
+      <%= article.file_field :thumbnail, placeholder: "サムネイル", class: "thumbnail_btn" %>
+      </label>
+    </div>
+    <div class="input_cotegory">
+      <%= article.select :category_id, @article.category, {}, { class: "cotegory_btn"} %>
+    </div>
+    <div class="input_content">
+      <%= article.text_area :content, placeholder: "#{@article.content}" %>
+    </div>
+    <div class="submit_btn clearfix">
+      <%= article.submit placeholder: "Sent", class: "submit_btn" %>
+    </div>
+  <% end %>
+</div>
