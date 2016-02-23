@@ -17,9 +17,15 @@
       </pre>
     <%end%>
     <div class="article_clip">
+    <% if user_signed_in? %>
       <div class="clip_btn">
         <%= link_to "clip", clips_path(article_id: @article.id ), method: :post %>
       </div>
+    <% else %>
+    <div class="clip_btn">
+        <%= link_to "clip", '/users/sign_in', method: :get %>
+      </div>
+    <% end %>
     </div>
   </div>
   <div class="content_bottom">
