@@ -10,7 +10,7 @@
       </label>
     </div>
     <div class="input_cotegory">
-      <%= article.select :category_id, article.category.id, {}, { class: "cotegory_btn"} %>
+      <%= article.select :category_id, @article, {}, { class: "cotegory_btn"} %>
     </div>
     <div class="input_content">
       <%= article.text_area :content, placeholder: "#{@article.content}" %>
