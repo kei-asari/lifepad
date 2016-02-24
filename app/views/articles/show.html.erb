@@ -20,11 +20,11 @@
     <% if user_signed_in? %>
       <% if @cliped.present? %>
         <div class="clip_btn">
-          <%= link_to "clip", clips_path(article_id: @article.id ), method: :post %>
+          <%= link_to 'clip削除', clip_path(@cliped), method: :delete %>
         </div>
       <% else %>
         <div class="clip_btn">
-          <%= link_to 'clip削除', "/clips/#{@cliped.id}", method: :delete %>
+          <%= link_to "clip", clips_path(article_id: @article.id ), method: :post %>
         </div>
       <% end%>
     <% else %>

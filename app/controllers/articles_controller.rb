@@ -4,7 +4,7 @@ class ArticlesController < ApplicationController
   def show
     @article = Article.find(params[:id])
     @clip = Clip.new
-    @cliped = Clip.where(category_id: @article.id, user_id: current_user.id)
+    @cliped = Clip.where(article_id: @article.id, user_id: current_user.id)
   end
 
   def new
