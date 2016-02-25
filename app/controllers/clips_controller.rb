@@ -6,11 +6,8 @@ class ClipsController < ApplicationController
   end
 
   def destroy
-    @article = Article.find(params[:article_id])
-    @clip = Clip.where(article_id: @article.id, user_id: current_user.id)
-    if @clip.user_id == current_user.id
-      @clip.destroy
-    end
+    @clip = Clip.where(article_id: :article_id, user_id: current_user.id)
+    @clip.destroy
     redirect_to controller: :home, action: :index
   end
 

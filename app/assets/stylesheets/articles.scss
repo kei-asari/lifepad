@@ -1,25 +1,25 @@
 .form_input{
-  margin: 70px auto;
+  margin: 20% auto;
   width: 90%;
 }
 
 .title_btn{
-  height: 60px;
+  height: 25%;
   width: 100%;
-  font-size: 30px;
+  font-size: 20px;
 }
 .file img{
   cursor:pointer;
 }
 .input_image{
-  width:50%;
+  width: 50%;
   float: left;
   margin-top: 10px;
 }
 .input_cotegory{
-  width:50%;
-  height: 60px;
-  float:left;
+  width: 50%;
+  height: 50px;
+  float: left;
   margin-top: 10px;
 }
 .cotegory_btn{
@@ -41,11 +41,11 @@ textarea{
   margin-right: 5%;
   margin-left: 5%;
   margin-top: 10px;
-  font-size: 30px;
+  font-size: 20px;
   border-radius: 20px;
 }
 .content_top{
-  height: 200px;
+  height: 20%;
   width: 90%;
   margin: 0 auto;
   background-color: white;
@@ -54,7 +54,7 @@ textarea{
   width: 40%;
   height: 60%;
   float: left;
-  padding-top: 10%;
+  padding-top: 3%;
 }
 .file input{
   display: none;
@@ -71,13 +71,14 @@ textarea{
 }
 .article_title{
   height:50%;
-  width: 30%;
+  width: 25%;
   float: left;
-  font-size: 30px;
+  font-size: 20px;
   text-align: left;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  margin-left: 2%;
 }
 #edit_btn{
   cursor: pointer;
@@ -88,20 +89,14 @@ textarea{
 }
 .article_clip{
   height:30%;
-  width: 60%;
+  width: 55%;
   float: right;
-}
-.test_btn{
-  background-color: white;
-  height:80%;
-  width: 90%;
-  margin: 5% 5%;
 }
 .clip_btn{
   height:60%;
   width: 100%;
   margin:0 auto;
-  margin-top: 5%;
+  margin-top: 10%;
   background-color: #99cc00;
   font-size: 20px;
   border-radius: 10px;
@@ -113,13 +108,14 @@ textarea{
   max-width: 95%;
   min-height:400px;
   margin: 10px auto;
+  margin-bottom: 10%;
 }
 .text_content{
   position: absolute;
   width: 95%;
   height: 90%;
   margin: 0 auto;
-  font-size:30px;
+  font-size:20px;
   word-wrap: break-word;
 }
 .contents_success{
@@ -140,18 +136,17 @@ textarea{
 }
 .search_article {
   height: 60px;
-  width: 70%;
+  width: 60%;
   font-size: 20px;
 }
 .btn_search{
   height: 60px;
-  width: 80px;
+  width: 30%;
   background-color: #99cc00;
   font-size: 20px;
 }
 #overlay{
   display: none;
-  margin-left:2px;
   width: 100%;
   height:100%;
   text-align: center;
@@ -160,12 +155,20 @@ textarea{
   z-index: 100;
   background: rgba(0,0,0,0.85);
 }
-#overlay a{
-  color: white;
-  font-size: 20px;
-}
 #overlay p{
   color: white;
   font-size: 20px;
 }
+.btn_edit{
+  color: white;
+  background-color: #99cc00;
+  width: 50%;
+  height: 10%;
+  font-size: 20px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 20px;
+}
+.btn_edit a{
 
+}
