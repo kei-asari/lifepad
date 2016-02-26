@@ -24,7 +24,9 @@
     <% if user_signed_in? %>
       <% if @cliped.present? %>
         <div class="clip_btn">
-          <%= link_to 'clip削除', clip_path(@cliped), method: :delete %>
+          <% @cliped.each do |f| %>
+            <%= link_to 'clip削除', clip_path(f), method: :delete %>
+          <% end %>
         </div>
       <% else %>
         <div class="clip_btn">

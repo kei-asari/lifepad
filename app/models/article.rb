@@ -1,6 +1,7 @@
 class Article < ActiveRecord::Base
   belongs_to :category
   belongs_to :user
+  has_many :clips
 
   has_attached_file :thumbnail,
                       styles:  { medium: "300x300#", thumb: "100x100#" }
