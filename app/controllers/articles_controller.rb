@@ -4,7 +4,11 @@ class ArticlesController < ApplicationController
   def show
     @article = Article.find(params[:id])
     @clip = Clip.new
-    @cliped = Clip.where(article_id: @article.id, user_id: current_user.id)
+    if user_signed_in?
+      @cliped = Clip.where(article_id: @article.id, user_id: current_user.id)
+    else
+      @cliped = Clip.new
+    end
   end
 
   def new
