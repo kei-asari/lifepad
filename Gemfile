@@ -54,4 +54,4 @@ gem 'nokogiri', '1.6.7.2'
 gem 'devise'
 gem 'paperclip'
 gem "acts-as-taggable-on"
-gem "font-awesome-rails"
+gem 'font-awesome-sass', '~> 4.5.0'
