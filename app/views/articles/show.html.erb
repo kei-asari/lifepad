@@ -6,7 +6,7 @@
     <div class="article_title">
         <p><%= @article.title %></p>
     </div>
-    <% if user_signed_in? %>
+    <% if user_signed_in? && current_user.id == @article.user_id %>
       <pre>
         <div id="overlay">
          <div class="btn_edit">
