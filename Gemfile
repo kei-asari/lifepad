@@ -55,3 +55,4 @@ gem 'devise'
 gem 'paperclip'
 gem "acts-as-taggable-on"
 gem 'font-awesome-sass', '~> 4.5.0'
+gem 'aws-sdk'
